@@ -1,11 +1,13 @@
-import { createStore, applyMiddleware, compose } from 'redux';
+import {
+  createStore, applyMiddleware, compose, combineReducers,
+} from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
+import reducer from './co2Emissions/co2Emissions';
 
 const rootReducer = combineReducers({
-    regions,
-    countries,
-  });
+  reducer,
+});
 
 const composedEnhancer = compose(applyMiddleware(logger), applyMiddleware(thunk));
 
