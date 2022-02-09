@@ -5,11 +5,13 @@ import { getCo2DataApi } from '../redux/co2Emissions/co2Emissions';
 
 const Region = ({ region }) => {
   const dispatch = useDispatch();
-  const code = region.iso;
+  const showCountries = () => {
+    dispatch(getCo2DataApi(region.iso));
+  };
   return (
     <div>
       <p>
-        <Link to="/countries" onClick={dispatch(getCo2DataApi(code))}>
+        <Link to="/countries" onClick={showCountries}>
           Region:
           {region.label}
         </Link>

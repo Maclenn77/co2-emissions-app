@@ -10,21 +10,10 @@ const apiUrlRegion = (region) => {
 export const fetchRegionData = async (code) => {
   const codes = retrieveCodes(code);
   const data = await fetch(apiUrlRegion(codes)).then((response) => response.json());
-  return data;
+  return data[1];
 };
 
-const fetchCountryData = async (country) => {
+export const fetchCountryData = async (country) => {
   const data = await fetch(apiUrl(country)).then((response) => response.json());
-  return data;
+  return data[1];
 };
-
-const fetchCo2Data = async (country) => {
-  if (country.length === 2) {
-    const data = await fetchCountryData(country);
-    return data;
-  }
-  const data = await fetchRegionData(country);
-  return data;
-};
-
-export default fetchCo2Data;

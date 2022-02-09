@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getCo2DataApi } from '../redux/co2Emissions/co2Emissions';
 import Region from './region';
+import { getCo2DataApi } from '../redux/co2Emissions/co2Emissions';
 
 const Regions = () => {
   const regionsData = useSelector((state) => state.co2Emissions);
@@ -9,7 +9,7 @@ const Regions = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getCo2DataApi('default'));
+    dispatch(getCo2DataApi(''));
   }, []);
 
   return (

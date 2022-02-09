@@ -12,18 +12,13 @@ const ecs = ['ECS',
   'CY',
   'DK',
   'EE',
-  'FO',
   'FI',
   'FR',
   'GE',
   'DE',
-  'GI',
   'GR',
-  'GL',
-  'VA',
   'IS',
   'IE',
-  'IM',
   'IT',
   'KZ',
   'KG',
@@ -32,13 +27,11 @@ const ecs = ['ECS',
   'LT',
   'LU',
   'MT',
-  'MC',
   'ME',
   'NL',
   'MK',
   'NO',
   'PT',
-  'SM',
   'RS',
   'SI',
   'ES',
@@ -51,31 +44,23 @@ const ecs = ['ECS',
   'UZ'].join(';');
 
 const eas = ['EAS',
-  'AS',
   'AU',
   'BN',
   'KH',
   'CN',
-  'FJ',
-  'PF',
-  'GU',
-  'HK',
   'ID',
   'JP',
   'KI',
   'KP',
   'KR',
   'LA',
-  'MO',
   'MY',
   'MH',
   'FM',
   'MN',
   'MM',
   'NR',
-  'NC',
   'NZ',
-  'MP',
   'PW',
   'PG',
   'PH',
@@ -87,25 +72,21 @@ const eas = ['EAS',
   'TL',
   'TO',
   'TV',
-  'UM',
   'VU',
   'VN'].join(';');
 
 const lcn = ['LCN',
   'AG',
   'AR',
-  'AW',
   'BS',
   'BB',
   'BZ',
   'BO',
   'BR',
-  'KY',
   'CL',
   'CO',
   'CR',
   'CU',
-  'CW',
   'DM',
   'DO',
   'EC',
@@ -121,7 +102,6 @@ const lcn = ['LCN',
   'PA',
   'PY',
   'PE',
-  'PR',
   'KN',
   'LC',
   'MF',
@@ -131,9 +111,7 @@ const lcn = ['LCN',
   'TT',
   'TC',
   'UY',
-  'VE',
-  'VG',
-  'VI'].join(';');
+  'VE'].join(';');
 
 const mea = ['MEA',
   'DZ',
@@ -157,7 +135,6 @@ const mea = ['MEA',
   'YE'].join(';');
 
 const nac = ['NAC',
-  'BM',
   'CA',
   'US'].join(';');
 
@@ -224,19 +201,19 @@ const ssf = ['SSF',
 
 const retrieveCodes = (code) => {
   switch (code) {
-    case 'eas':
+    case 'EAS':
       return eas;
-    case 'ecs':
+    case 'ECS':
       return ecs;
-    case 'lcn':
+    case 'LCN':
       return lcn;
-    case 'mea':
+    case 'MEA':
       return mea;
-    case 'nac':
+    case 'NAC':
       return nac;
-    case 'sas':
+    case 'SAS':
       return sas;
-    case 'ssf':
+    case 'SSF':
       return ssf;
     default:
       return regions;
