@@ -1,4 +1,5 @@
-import retrieveCodes from "./codes";
+import retrieveCodes from './codes';
+
 const apiUrl = (countries) => `http://api.worldbank.org/v2/country/${countries}/indicator/EN.ATM.CO2E.PC?format=json`;
 
 const apiUrlRegion = (region) => {
