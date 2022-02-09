@@ -1,21 +1,14 @@
 import './App.css';
-import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { regions } from './redux/co2Emissions/api/codes';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Regions from './components/regions';
-import { getCo2DataApi } from './redux/co2Emissions/co2Emissions';
 
 function App() {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getCo2DataApi(regions));
-  }, []);
-
   return (
-    <div className="App">
-      <Regions />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Regions />} />
+      </Routes>
+    </Router>
   );
 }
 

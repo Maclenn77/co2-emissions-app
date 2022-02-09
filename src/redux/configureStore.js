@@ -3,10 +3,10 @@ import {
 } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
-import reducer from './co2Emissions/co2Emissions';
+import co2Emissions from './co2Emissions/co2Emissions';
 
 const rootReducer = combineReducers({
-  reducer,
+  co2Emissions,
 });
 
 const composedEnhancer = compose(applyMiddleware(logger), applyMiddleware(thunk));

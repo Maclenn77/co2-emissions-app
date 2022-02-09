@@ -1,3 +1,4 @@
+import retrieveCodes from "./codes";
 const apiUrl = (countries) => `http://api.worldbank.org/v2/country/${countries}/indicator/EN.ATM.CO2E.PC?format=json`;
 
 const apiUrlRegion = (region) => {
@@ -5,8 +6,9 @@ const apiUrlRegion = (region) => {
   return url;
 };
 
-const fetchRegionData = async (region) => {
-  const data = await fetch(apiUrlRegion(region)).then((response) => response.json());
+export const fetchRegionData = async (code) => {
+  const codes = retrieveCodes(code);
+  const data = await fetch(apiUrlRegion(codes)).then((response) => response.json());
   return data;
 };
 
@@ -17,9 +19,11 @@ const fetchCountryData = async (country) => {
 
 const fetchCo2Data = async (country) => {
   if (country.length === 2) {
-    await fetchCountryData(country);
+    const data = await fetchCountryData(country);
+    return data;
   }
-  await fetchRegionData(country);
+  const data = await fetchRegionData(country);
+  return data;
 };
 
 export default fetchCo2Data;

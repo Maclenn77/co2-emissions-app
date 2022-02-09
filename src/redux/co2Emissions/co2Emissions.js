@@ -1,4 +1,4 @@
-import fetchCo2Data from './api/handler';
+import { fetchRegionData } from './api/handler';
 
 const FETCH_CO2EMISSIONS = 'FETCH_CO2EMISSIONS';
 
@@ -9,8 +9,19 @@ export const getCo2Data = (payload) => ({
   payload,
 });
 
-export const getCo2DataApi = (country) => async (dispatch) => {
-  await fetchCo2Data(country).then((data) => dispatch(getCo2Data(data)));
+export const getCo2DataApi = (regions) => async (dispatch) => {
+  const regionData = await fetchRegionData(regions);
+  const regionDataList = [];
+  regionData[1].forEach((item) => {
+    regionDataList.push({
+      id: item,
+      iso: item.countryiso3code,
+      label: item.country.value,
+      date: item.date,
+      co2Emissions: item.value,
+    });
+  });
+  dispatch(getCo2Data(regionDataList));
 };
 
 const reducer = (state = initialState, action) => {

@@ -1,6 +1,7 @@
-export const regions = 'eas;ecs;lcn;mea;nac;sas;ssf';
+const regions = 'eas;ecs;lcn;mea;nac;sas;ssf';
 
-export const ecs = ['AL',
+const ecs = ['ECS',
+  'AL',
   'AD',
   'AM',
   'AT',
@@ -49,7 +50,8 @@ export const ecs = ['AL',
   'GB',
   'UZ'].join(';');
 
-export const eas = ['AS',
+const eas = ['EAS',
+  'AS',
   'AU',
   'BN',
   'KH',
@@ -89,7 +91,8 @@ export const eas = ['AS',
   'VU',
   'VN'].join(';');
 
-export const lcn = ['AG',
+const lcn = ['LCN',
+  'AG',
   'AR',
   'AW',
   'BS',
@@ -132,7 +135,8 @@ export const lcn = ['AG',
   'VG',
   'VI'].join(';');
 
-export const mea = ['DZ',
+const mea = ['MEA',
+  'DZ',
   'BH',
   'EG',
   'IQ',
@@ -152,11 +156,13 @@ export const mea = ['DZ',
   'AE',
   'YE'].join(';');
 
-export const nac = ['BM',
+const nac = ['NAC',
+  'BM',
   'CA',
   'US'].join(';');
 
-export const sas = ['AF',
+const sas = ['SAS',
+  'AF',
   'BD',
   'BT',
   'IN',
@@ -166,7 +172,8 @@ export const sas = ['AF',
   'PK',
   'LK'].join(';');
 
-export const ssf = ['AO',
+const ssf = ['SSF',
+  'AO',
   'BJ',
   'BF',
   'BI',
@@ -214,3 +221,26 @@ export const ssf = ['AO',
   'UG',
   'ZM',
   'ZW'].join(';');
+
+const retrieveCodes = (code) => {
+  switch (code) {
+    case 'eas':
+      return eas;
+    case 'ecs':
+      return ecs;
+    case 'lcn':
+      return lcn;
+    case 'mea':
+      return mea;
+    case 'nac':
+      return nac;
+    case 'sas':
+      return sas;
+    case 'ssf':
+      return ssf;
+    default:
+      return regions;
+  }
+};
+
+export default retrieveCodes;
