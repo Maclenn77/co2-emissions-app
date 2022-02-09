@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import Detail from "./detail";
 
 const Details = () => {
     const details = useSelector((state) => state.co2Emissions);
@@ -11,8 +12,8 @@ const Details = () => {
       <div>
           <h2>{country.name}</h2>
           {details.map((year) => (
-              <p key={year.id}>{year.date}: {year.co2Emissions}</p>
-          ))}
+              <Detail key={year.id} year={year} />
+          ))};
       </div>
     );
 }
