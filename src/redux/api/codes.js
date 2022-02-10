@@ -194,26 +194,26 @@ const ssf = ['AO',
 
 const retrieveCodes = (code) => {
   if (code === 'EAS') {
-      return eas;
-    }
+    return eas;
+  }
   if (code === 'ECS') {
-      return ecs;
-    }
+    return ecs;
+  }
   if (code === 'LCN') {
-      return lcn;
-    } 
+    return lcn;
+  }
   if (code === 'MEA') {
-      return mea;
-    } 
+    return mea;
+  }
   if (code === 'NAC') {
-      return nac;
-    }
+    return nac;
+  }
   if (code === 'SAS') {
-      return sas;
-    }
+    return sas;
+  }
   if (code === 'SSF') {
-      return ssf;
-    }
+    return ssf;
+  }
   return regions;
 };
 

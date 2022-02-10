@@ -1,6 +1,9 @@
+
+
 body {
   margin: 0;
-  color: antiquewhite;
+  color: antiquewhite !important;
+  background-color: #01d4fe;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -21,6 +24,16 @@ nav, section, main {
   background-color: #01d4fe;
 }
 
+nav {
+  padding: 1rem;
+}
+
+.header {
+  padding: 1rem;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(56,198,217,1) 35%, rgba(0,212,255,1) 100%);
+
+}
+
 code {
   font-family:
     source-code-pro,
@@ -31,13 +44,15 @@ code {
     monospace;
 }
 
-h1, h2, p {
-  text-shadow: 0.5rem;
+h1, h2, p, .co2 {
+  text-shadow: 1rem !important;
   text-align: right;
 }
 
 h3 {
   margin: 0;
+  font-size: small !important;
+  color: antiquewhite;
 }
 
 a, a:active, a:hover {
@@ -59,5 +74,10 @@ a, a:active, a:hover {
 
 .fourth {
   background-color: #020125;
+}
+
+.arrow-icon {
+  text-align: right;
+  margin-left: auto;
 }
 
