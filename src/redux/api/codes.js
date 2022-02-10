@@ -193,24 +193,28 @@ const ssf = ['AO',
   'ZW'].join(';');
 
 const retrieveCodes = (code) => {
-  switch (code) {
-    case 'EAS':
+  if (code === 'EAS') {
       return eas;
-    case 'ECS':
+    }
+  if (code === 'ECS') {
       return ecs;
-    case 'LCN':
+    }
+  if (code === 'LCN') {
       return lcn;
-    case 'MEA':
+    } 
+  if (code === 'MEA') {
       return mea;
-    case 'NAC':
+    } 
+  if (code === 'NAC') {
       return nac;
-    case 'SAS':
+    }
+  if (code === 'SAS') {
       return sas;
-    case 'SSF':
+    }
+  if (code === 'SSF') {
       return ssf;
-    default:
-      return regions;
-  }
+    }
+  return regions;
 };
 
 export default retrieveCodes;

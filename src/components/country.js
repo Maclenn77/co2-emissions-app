@@ -1,29 +1,17 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { getCo2Details } from '../redux/details/details';
 
-const Country = ({ country }) => {
-  const dispatch = useDispatch();
-  const showDetails = () => {
-    dispatch(getCo2Details(country.iso));
-  };
-
-  return (
-    <div>
+const Country = ({ country }) => (
+  <Link to={`/details/${country.iso}`}>
+    <div className="p-2">
+      <h2>
+        {country.label}
+      </h2>
       <p>
-        <Link to="/details" onClick={showDetails}>
-          Country:
-          {' '}
-          {country.label}
-        </Link>
-      </p>
-      <p>
-        Co2 per capita:
         {country.co2Emissions}
       </p>
     </div>
-  );
-};
+  </Link>
+);
 
 export default Country;

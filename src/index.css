@@ -45,7 +45,7 @@ a, a:active, a:hover {
   text-decoration: none !important; 
 }
 
-.first {
+.first, .header {
   background-color: #01d4fe;
 }
 
@@ -60,3 +60,4 @@ a, a:active, a:hover {
 .fourth {
   background-color: #020125;
 }
+

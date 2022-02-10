@@ -1,4 +1,4 @@
-const pickColor = (index) => {
+export const pickColor = (index) => {
   if (index % 4 === 0) {
     return 'first col-6';
   }
@@ -11,4 +11,9 @@ const pickColor = (index) => {
   return 'fourth col-6';
 };
 
-export default pickColor;
+export const pick2Color = (index) => {
+  if (index % 2 === 0) {
+    return 'first col-12';
+  }
+  return 'third col-12';
+};

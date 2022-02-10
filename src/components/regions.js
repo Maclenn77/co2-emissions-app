@@ -4,7 +4,7 @@ import Region from './region';
 import { getCo2DataApi } from '../redux/co2Emissions/co2Emissions';
 import './regions.css';
 import logo from '../logo512.png';
-import pickColor from '../view/handler';
+import { pickColor } from '../view/handler';
 
 const Regions = () => {
   const regionsData = useSelector((state) => state.co2Emissions);
