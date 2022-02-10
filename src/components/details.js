@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import Detail from './detail';
 import Country from './country';
 import { getCo2Details } from '../redux/details/details';
-import { pick2Color } from '../view/handler'
+import { pick2Color } from '../view/handler';
 
 const Details = () => {
   const { country } = useParams();
