@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  color: antiquewhite;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -16,6 +17,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+nav, section, main {
+  background-color: #01d4fe;
+}
+
 code {
   font-family:
     source-code-pro,
@@ -25,3 +30,34 @@ code {
     'Courier New',
     monospace;
 }
+
+h1, h2, p {
+  text-shadow: 0.5rem;
+  text-align: right;
+}
+
+h3 {
+  margin: 0;
+}
+
+a, a:active, a:hover {
+  color: antiquewhite !important;
+  text-decoration: none !important; 
+}
+
+.first, .header {
+  background-color: #01d4fe;
+}
+
+.second {
+  background-color: #38c6d9;
+}
+
+.third {
+    background-color: #164967;
+  }
+
+.fourth {
+  background-color: #020125;
+}
+
