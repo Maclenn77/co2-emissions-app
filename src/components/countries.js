@@ -5,6 +5,7 @@ import Country from './country';
 import Region from './region';
 import { pickColor } from '../view/handler';
 import { getCountriesDataApi } from '../redux/countries/countries';
+import './countries.css';
 
 const Countries = () => {
   const { region } = useParams();
@@ -37,8 +38,10 @@ const Countries = () => {
         <Region key={regionData.iso} region={regionData} />
       </div>
       <section className="container">
-        <div className='searchInputs col-12'>
-        <input type="text" placeholder="Enter Country's name" onChange={handleFilter} />
+        <div className="row d-flex justify-content-center">
+          <div className="searchInputs">
+            <input type="text" placeholder="Enter Country's name" onChange={handleFilter} className="my-1" />
+          </div>
         </div>
         <div className="stats row">
           <h3>STATS BY COUNTRY </h3>
