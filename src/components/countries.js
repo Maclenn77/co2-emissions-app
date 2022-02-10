@@ -5,6 +5,7 @@ import Country from './country';
 import Region from './region';
 import { pickColor } from '../view/handler';
 import { getCountriesDataApi } from '../redux/countries/countries';
+import SearchBar from './searchBar';
 
 const Countries = () => {
   const { region } = useParams();
@@ -26,6 +27,7 @@ const Countries = () => {
       </div>
       <section className="container">
         <div className="stats row">
+          <SearchBar placeholder="Type a country's name" data={regionData} />
           <h3>STATS BY COUNTRY </h3>
         </div>
         <div className="row">
