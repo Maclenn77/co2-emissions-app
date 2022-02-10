@@ -1,15 +1,15 @@
 import { fetchRegionData } from '../api/handler';
 
-const FETCH_CO2DATA = 'FETCH_CO2DATA';
+const FETCH_COUNTRIES = 'FETCH_COUNTRIES';
 
 const initialState = [];
 
-const getCo2Data = (payload) => ({
-  type: FETCH_CO2DATA,
+const getCountriesData = (payload) => ({
+  type: FETCH_COUNTRIES,
   payload,
 });
 
-export const getCo2DataApi = (code) => async (dispatch) => {
+export const getCountriesDataApi = (code) => async (dispatch) => {
   const regionDataList = [];
   const data = await fetchRegionData(code);
   data.forEach((item) => {
@@ -21,12 +21,12 @@ export const getCo2DataApi = (code) => async (dispatch) => {
       co2Emissions: item.value,
     });
   });
-  dispatch(getCo2Data(regionDataList));
+  dispatch(getCountriesData(regionDataList));
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_CO2DATA:
+    case FETCH_COUNTRIES:
       return action.payload;
     default:
       return state;

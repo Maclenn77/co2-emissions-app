@@ -1,12 +1,12 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { getCo2CountryApi } from '../redux/co2Emissions/co2Emissions';
+import { getCo2Details } from '../redux/details/details';
 
 const Country = ({ country }) => {
   const dispatch = useDispatch();
   const showDetails = () => {
-    dispatch(getCo2CountryApi(country.iso));
+    dispatch(getCo2Details(country.iso));
   };
 
   return (

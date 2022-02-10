@@ -1,7 +1,6 @@
-const regions = 'eas;ecs;lcn;mea;nac;sas;ssf';
+const regions = 'EAS;ECS;LCN;MEA;NAC;SAS;SSF';
 
-const ecs = ['ECS',
-  'AL',
+const ecs = ['AL',
   'AD',
   'AM',
   'AT',
@@ -43,8 +42,7 @@ const ecs = ['ECS',
   'GB',
   'UZ'].join(';');
 
-const eas = ['EAS',
-  'AU',
+const eas = ['AU',
   'BN',
   'KH',
   'CN',
@@ -75,8 +73,7 @@ const eas = ['EAS',
   'VU',
   'VN'].join(';');
 
-const lcn = ['LCN',
-  'AG',
+const lcn = ['AG',
   'AR',
   'BS',
   'BB',
@@ -113,8 +110,7 @@ const lcn = ['LCN',
   'UY',
   'VE'].join(';');
 
-const mea = ['MEA',
-  'DZ',
+const mea = ['DZ',
   'BH',
   'EG',
   'IQ',
@@ -134,12 +130,10 @@ const mea = ['MEA',
   'AE',
   'YE'].join(';');
 
-const nac = ['NAC',
-  'CA',
+const nac = ['CA',
   'US'].join(';');
 
-const sas = ['SAS',
-  'AF',
+const sas = ['AF',
   'BD',
   'BT',
   'IN',
@@ -149,8 +143,7 @@ const sas = ['SAS',
   'PK',
   'LK'].join(';');
 
-const ssf = ['SSF',
-  'AO',
+const ssf = ['AO',
   'BJ',
   'BF',
   'BI',

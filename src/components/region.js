@@ -1,27 +1,24 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { getCo2DataApi } from '../redux/co2Emissions/co2Emissions';
+import { getCountriesDataApi } from '../redux/countries/countries';
 
 const Region = ({ region }) => {
   const dispatch = useDispatch();
   const showCountries = () => {
-    dispatch(getCo2DataApi(region.iso));
+    dispatch(getCountriesDataApi(region.iso));
   };
   return (
-    <div>
-      <p>
-        <Link to="/countries" onClick={showCountries}>
-          Region:
+    <Link to={`/countries/${region.iso}`} onClick={showCountries}>
+      <div className="p-2">
+        <h2>
           {region.label}
-        </Link>
-      </p>
-      <p>
-        Co2 per capita:
-        {' '}
-        {region.co2Emissions}
-      </p>
-    </div>
+        </h2>
+        <p>
+          {region.co2Emissions}
+        </p>
+      </div>
+    </Link>
   );
 };
 

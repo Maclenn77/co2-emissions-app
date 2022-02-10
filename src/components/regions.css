@@ -1,0 +1,22 @@
+.home {
+  display: flex;
+  height: 25vh;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(56,198,217,1) 35%, rgba(0,212,255,1) 100%);
+  padding: 2rem;
+}
+
+img {
+    max-width: 20vh;
+    max-height: 20vh;
+}
+
+p.title {
+    text-align: right;
+    font-style: italic;
+}
+
+.stats {
+    background-color: #38c6d9;
+    min-width: 100%;
+}
