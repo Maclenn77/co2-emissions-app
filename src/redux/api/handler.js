@@ -1,6 +1,6 @@
 import retrieveCodes from './codes';
 
-const apiUrl = (countries) => `http://api.worldbank.org/v2/country/${countries}/indicator/EN.ATM.CO2E.PC?format=json`;
+const apiUrl = (countries) => `https://api.worldbank.org/v2/country/${countries}/indicator/EN.ATM.CO2E.PC?format=json`;
 
 const apiUrlRegion = (region) => {
   const url = `${apiUrl(region)}&date=2018&per_page=100`;
