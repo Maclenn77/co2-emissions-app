@@ -2,7 +2,7 @@
 
 Carbon dioxide emissions are the primary driver of global climate change. To create awareness about the problem, this project fetches World Bank's data related to Co2 Emissions per capita and shows the data in an accessible way.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Design is based on an original idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
 ## About 
 
