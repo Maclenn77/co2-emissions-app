@@ -1,0 +1,9 @@
+input {
+  margin: auto;
+  width: 100%;
+  border: none;
+}
+
+.searchInputs {
+  width: fit-content;
+}
