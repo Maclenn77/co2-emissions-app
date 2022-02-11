@@ -4,7 +4,7 @@ const FETCH_DETAILS = 'FETCH_DETAILS';
 
 const initialState = [];
 
-const getDetailsData = (payload) => ({
+export const getDetailsData = (payload) => ({
   type: FETCH_DETAILS,
   payload,
 });

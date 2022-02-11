@@ -21,7 +21,7 @@ const Regions = () => {
       <div className="home d-flex justify-content-between">
         <img src={logo} alt="co2 logo png" />
         <div className="title">
-          <h1>CO2 Emissions around the world</h1>
+          <h1>CO<sub>2</sub> Emissions around the world</h1>
           <p>
             (Metric tons per capita)
           </p>

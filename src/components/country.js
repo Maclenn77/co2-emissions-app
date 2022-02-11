@@ -12,7 +12,7 @@ const Country = ({ country }) => (
       <h2>
         {country.label}
       </h2>
-      <h6 className="co2">Co2:</h6>
+      <h6 className="co2">CO<sub>2</sub>:</h6>
       <p>
         {country.co2Emissions}
       </p>
