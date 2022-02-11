@@ -1,13 +1,15 @@
 main.info {
-    padding: 2rem;
+  padding: 2rem;
 }
 
-h1.info, h2.info, p.info {
+h1.info,
+h2.info,
+p.info {
   text-align: justify !important;
   max-width: 600px;
 }
 
 main {
-    background: rgb(0,212,255);
-    background: linear-gradient(0deg, rgba(52,183,203,1) 0%, rgba(2,0,36,1) 100%);
+  background: rgb(0, 212, 255);
+  background: linear-gradient(0deg, rgba(52, 183, 203, 1) 0%, rgba(2, 0, 36, 1) 100%);
 }

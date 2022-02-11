@@ -5,11 +5,11 @@
 }
 
 img {
-    max-width: 12vh;
-    max-height: 12vh;
+  max-width: 12vh;
+  max-height: 12vh;
 }
 
 p.title {
-    text-align: right;
-    font-style: italic;
+  text-align: right;
+  font-style: italic;
 }
