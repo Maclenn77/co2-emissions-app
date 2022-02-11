@@ -2,7 +2,6 @@
   "name": "co2-emissions-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://maclenn77.github.io/co2-emissions-app",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
@@ -29,9 +28,7 @@
     "test": "jest",
     "test:watch": "npm test -- --watch",
     "eject": "react-scripts eject",
-    "lint": "npx eslint . --fix && npx stylelint '**/*.{css,scss}' --fix",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "lint": "npx eslint . --fix && npx stylelint '**/*.{css,scss}' --fix"
   },
   "eslintConfig": {
     "extends": [
