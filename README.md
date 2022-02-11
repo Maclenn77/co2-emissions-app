@@ -1,6 +1,64 @@
-# Getting Started with Create React App
+# Co2 Emissions Web App
+
+Carbon dioxide emissions are the primary driver of global climate change. To create awareness about the problem, this project fetch World Bank's data related to Co2 Emissions per capita and show the data in an accessible way.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## About 
+
+Carbon dioxide emissions are the primary driver of global climate change. It’s widely recognised that to avoid the worst impacts of climate change, the world needs to urgently reduce emissions.
+
+## Screenshots
+
+### Home
+![Home](app_screenshot001.png)
+
+### Countries 
+
+![Countries](app_screenshot002.png)
+
+### Details
+
+![Details](app_screenshot003.png)
+
+## Built with
+
+- HTML/CSS
+- Bootstrap 5
+- React & Redux
+- Jest
+- Git Flow
+- World Bank Data's API
+- VS Code
+
+## Live Demo and presentation
+
+[Live Demo Link](https://nervous-sinoussi-04e1da.netlify.app)
+
+[Presentation](https://www.loom.com/share/85cfa27e95f943d2a8b8ea432fd541a4)
+
+## Getting started
+
+Follow the instructions to get a local copy and run the project in your own server.
+
+You will need:
+
+- Node.js (npm)
+- A code editor
+- Git
+
+### Setup
+
+1. Open the terminal and clone the project using `git clone REPOURL` 
+
+### Install
+
+1. `cd` into the project folder and run `npm install`
+2. Run the command `npm start` to open a local version of the project.
+
+## Test Environment
+
+The test environment is set up with jest. Run `npm test` or `npm test:watch` to run tests.
 
 ## Available Scripts
 
@@ -39,32 +97,33 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 **J.P**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- GitHub: [@Maclenn77](https://github.com/Maclenn77)
+- Twitter: [@SrJuanPapas](https://twitter.com/SrJuanPapas)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/juanpaulopereztejada/)
 
-### Code Splitting
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions, issues, and feature requests are welcome!
 
-### Analyzing the Bundle Size
+Feel free to check the [issues page](https://github.com/Maclenn77/co2-emissions-app/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Priority tasks
 
-### Making a Progressive Web App
+Do you want to contribute but you don't know how? These are some tasks that are needed in the project:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Create more tests
+- Integrate new APIs
+- Allow visualization whit params in a link 
 
-### Advanced Configuration
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Give a ⭐️ if you like this project!
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📝 License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.

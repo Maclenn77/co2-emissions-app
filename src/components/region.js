@@ -12,7 +12,11 @@ const Region = ({ region }) => (
       <h2>
         {region.label}
       </h2>
-      <h6 className="co2">CO<sub>2</sub>:</h6>
+      <h6 className="co2">
+        CO
+        <sub>2</sub>
+        :
+      </h6>
       <p>
         {region.co2Emissions}
       </p>

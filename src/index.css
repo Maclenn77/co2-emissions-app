@@ -9,7 +9,7 @@ body {
   font-family:
     -apple-system,
     BlinkMacSystemFont,
-    'Segoe UI',
+    'Lato',
     'Roboto',
     'Oxygen',
     'Ubuntu',
@@ -22,7 +22,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-section, main {
+section,
+main {
   background-color: #01d4fe;
 }
 
@@ -35,9 +36,10 @@ main {
   margin: auto;
 }
 
-.header, .home {
+.header,
+.home {
   padding: 1rem;
-  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(56,198,217,1) 35%, rgba(2,0,36,1) 80%);
+  background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(56, 198, 217, 1) 35%, rgba(2, 0, 36, 1) 80%);
 }
 
 code {
@@ -50,9 +52,22 @@ code {
     monospace;
 }
 
-h1, h2, p, .co2 {
-  text-shadow: 1rem !important;
+h1,
+h2,
+p,
+.co2 {
   text-align: right;
+}
+
+h1,
+h2,
+h3,
+h6 {
+  font-family: 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h3 {
@@ -60,22 +75,25 @@ h3 {
   color: antiquewhite;
 }
 
-a, a:active, a:hover {
+a,
+a:active,
+a:hover {
   color: antiquewhite !important;
-  text-decoration: none !important; 
+  text-decoration: none !important;
 }
 
 .first {
   background-color: #01d4fe;
 }
 
-nav, .second {
+nav,
+.second {
   background-color: #38c6d9;
 }
 
 .third {
-    background-color: #164967;
-  }
+  background-color: #164967;
+}
 
 .fourth {
   background-color: #020125;
@@ -88,5 +106,5 @@ nav, .second {
 
 .stats {
   min-width: 100%;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(56,198,217,1) 35%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(56, 198, 217, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
