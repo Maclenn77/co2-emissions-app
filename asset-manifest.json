@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/co2-emissions-app/static/css/main.a523efa8.css",
+    "main.js": "/co2-emissions-app/static/js/main.316fb86a.js",
+    "static/js/787.e114bdcf.chunk.js": "/co2-emissions-app/static/js/787.e114bdcf.chunk.js",
+    "static/media/logo512.png": "/co2-emissions-app/static/media/logo512.af59b2223aa6fb53467c.png",
+    "index.html": "/co2-emissions-app/index.html",
+    "main.a523efa8.css.map": "/co2-emissions-app/static/css/main.a523efa8.css.map",
+    "main.316fb86a.js.map": "/co2-emissions-app/static/js/main.316fb86a.js.map",
+    "787.e114bdcf.chunk.js.map": "/co2-emissions-app/static/js/787.e114bdcf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a523efa8.css",
+    "static/js/main.316fb86a.js"
+  ]
+}
