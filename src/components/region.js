@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ForwardIcon from '@material-ui/icons/ForwardOutlined';
+import PropTypes from 'prop-types';
 
 const Region = ({ region }) => (
   <Link to={`/countries/${region.iso}`}>
@@ -18,5 +19,13 @@ const Region = ({ region }) => (
     </div>
   </Link>
 );
+
+Region.propTypes = {
+  region: PropTypes.shape({
+    iso: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    co2Emissions: PropTypes.number.isRequired,
+  }).isRequired,
+};
 
 export default Region;

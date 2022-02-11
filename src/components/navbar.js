@@ -9,9 +9,9 @@ const Navbar = () => {
 
   return (
     <nav className="d-flex justify-content-between">
-      <button type="button" onClick={() => navigate(-1)}><ArrowBackIcon /></button>
-      <h6>Source: World Bank Data</h6>
-      <Link to="/more"><InfoIcon /></Link>
+      <button type="button" onClick={() => navigate(-1)} aria-label="Go back"><ArrowBackIcon /></button>
+      <Link to="/"><h6>Source: World Bank Data</h6></Link>
+      <Link to="/info"><InfoIcon /></Link>
     </nav>
   );
 };

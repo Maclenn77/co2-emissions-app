@@ -18,7 +18,7 @@ const Details = () => {
 
   let countryiso = useSelector((state) => state.countries.filter((data) => data.iso === country));
 
-  countryiso = countryiso[0];
+  [countryiso] = [countryiso[0]];
 
   return (
     <main>
@@ -27,11 +27,11 @@ const Details = () => {
       </div>
       <section className="container">
         <div className="stats row">
-          <h3>STATS BY YEAR </h3>
+          <h6>STATS BY YEAR </h6>
         </div>
         <div className="row">
           {details.map((year) => (
-            <div className={pick2Color(details.indexOf(year))}>
+            <div key={year.id} className={pick2Color(details.indexOf(year))}>
               <Detail key={year.id} year={year} />
             </div>
           ))}

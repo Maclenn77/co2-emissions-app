@@ -1,9 +1,11 @@
-
+html {
+  background-color: #020125;
+}
 
 body {
   margin: 0;
   color: antiquewhite !important;
-  background-color: #01d4fe;
+  background-color: #020125 !important;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -20,7 +22,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-nav, section, main {
+section, main {
   background-color: #01d4fe;
 }
 
@@ -28,10 +30,14 @@ nav {
   padding: 1rem;
 }
 
-.header {
-  padding: 1rem;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(56,198,217,1) 35%, rgba(0,212,255,1) 100%);
+main {
+  max-width: 960px;
+  margin: auto;
+}
 
+.header, .home {
+  padding: 1rem;
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(56,198,217,1) 35%, rgba(2,0,36,1) 80%);
 }
 
 code {
@@ -51,7 +57,6 @@ h1, h2, p, .co2 {
 
 h3 {
   margin: 0;
-  font-size: small !important;
   color: antiquewhite;
 }
 
@@ -60,11 +65,11 @@ a, a:active, a:hover {
   text-decoration: none !important; 
 }
 
-.first, .header {
+.first {
   background-color: #01d4fe;
 }
 
-.second {
+nav, .second {
   background-color: #38c6d9;
 }
 
@@ -81,3 +86,7 @@ a, a:active, a:hover {
   margin-left: auto;
 }
 
+.stats {
+  min-width: 100%;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(56,198,217,1) 35%, rgba(0,212,255,1) 100%);
+}

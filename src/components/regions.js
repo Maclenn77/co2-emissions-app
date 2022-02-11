@@ -18,8 +18,8 @@ const Regions = () => {
   return (
 
     <main>
-      <div className="home">
-        <img src={logo} />
+      <div className="home d-flex justify-content-between">
+        <img src={logo} alt="co2 logo png" />
         <div className="title">
           <h1>CO2 Emissions around the world</h1>
           <p>
@@ -29,11 +29,11 @@ const Regions = () => {
       </div>
       <section className="container">
         <div className="stats row">
-          <h3>STATS BY REGION </h3>
+          <h6>STATS BY REGION </h6>
         </div>
         <div className="row">
           {regionsData.map((region) => (
-            <div className={pickColor(regionsData.indexOf(region))}>
+            <div key={region.iso} className={pickColor(regionsData.indexOf(region))}>
               <Region key={region.iso} region={region} className="region" />
             </div>
           ))}

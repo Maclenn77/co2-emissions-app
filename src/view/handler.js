@@ -13,7 +13,7 @@ export const pickColor = (index) => {
 
 export const pick2Color = (index) => {
   if (index % 2 === 0) {
-    return 'first col-12';
+    return 'second col-12';
   }
   return 'third col-12';
 };

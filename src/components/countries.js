@@ -16,11 +16,12 @@ const Countries = () => {
   const [filteredData, setFilteredData] = useState([]);
 
   let regionData = useSelector((state) => state.co2Emissions.filter((data) => data.iso === region));
-  regionData = regionData[0];
+  [regionData] = [regionData[0]];
 
   const handleFilter = (event) => {
     const searchWord = event.target.value;
-    const newFilter = countriesData.filter((value) => value.label.toLowerCase().includes(searchWord.toLowerCase()));
+    const newFilter = countriesData.filter((value) => value.label.toLowerCase()
+      .includes(searchWord.toLowerCase()));
     if (searchWord === '') {
       setFilteredData([]);
     } else {
@@ -44,13 +45,13 @@ const Countries = () => {
           </div>
         </div>
         <div className="stats row">
-          <h3>STATS BY COUNTRY </h3>
+          <h6>STATS BY COUNTRY </h6>
         </div>
         {filteredData.length === 0 && (
         <div className="row">
 
           {countriesData.map((country) => (
-            <div className={pickColor(countriesData.indexOf(country))}>
+            <div key={country.iso} className={pickColor(countriesData.indexOf(country))}>
               <Country key={country.iso} country={country} />
             </div>
           ))}
@@ -60,7 +61,7 @@ const Countries = () => {
         {filteredData.length !== 0 && (
         <div className="row">
           {filteredData.map((country) => (
-            <div className={pickColor(countriesData.indexOf(country))}>
+            <div key={country.iso} className={pickColor(countriesData.indexOf(country))}>
               <Country key={country.iso} country={country} />
             </div>
           ))}
