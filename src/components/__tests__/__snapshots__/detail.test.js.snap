@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="d-flex justify-content-between"
+>
+  <div>
+    <p>
+      2018
+      :
+    </p>
+  </div>
+  <div>
+    <p>
+      6
+    </p>
+  </div>
+</div>
+`;
