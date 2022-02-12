@@ -1,8 +1,8 @@
 # Co2 Emissions Web App
 
-Carbon dioxide emissions are the primary driver of global climate change. To create awareness about the problem, this project fetch World Bank's data related to Co2 Emissions per capita and show the data in an accessible way.
+Carbon dioxide emissions are the primary driver of global climate change. To create awareness about the problem, this project fetches World Bank's data related to Co2 Emissions per capita and shows the data in an accessible way.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Design is based on an original idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
 ## About 
 
@@ -39,7 +39,7 @@ Carbon dioxide emissions are the primary driver of global climate change. It’s
 
 ## Getting started
 
-Follow the instructions to get a local copy and run the project in your own server.
+Follow the instructions to get a local copy and run the project on your own server.
 
 You will need:
 
